@@ -1,0 +1,46 @@
+#hamburger
+{
+    position: absolute;
+    top:0;
+    right:0;
+    text-align: center;
+    background:none;
+    border:none;
+    font-size:30px;
+    margin:15px;
+    outline: none;
+    cursor:pointer;
+    z-index: 100;
+}
+
+.navbar
+{
+    width:300px;
+    min-height:500px;
+    height:100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #efefef;
+    border-left:1px solid #eee;
+    transition: all 0.5s;
+}
+
+.navbar .navlist
+{
+    margin-top:100px;
+}
+
+.navbar .navlist li
+{
+    margin:25px 0;
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+.navbar .navlist li a
+{
+    color:#333;
+    font-weight:600;
+    text-decoration: none;
+}
