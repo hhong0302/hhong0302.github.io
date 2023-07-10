@@ -1,6 +1,10 @@
+html{
+	scroll-behavior: smooth;
+}
+
 #hamburger
 {
-    position: absolute;
+    position: fixed;
     top:0;
     right:0;
     text-align: center;
@@ -18,23 +22,30 @@
     width:300px;
     min-height:500px;
     height:100%;
-    position: absolute;
+    padding-top: 100px;
+    padding-left: 40px;
+    position: fixed;
     top: 0;
-    right: 0;
+    right: -300px;
     background-color: #efefef;
     border-left:1px solid #eee;
     transition: all 0.5s;
 }
 
-.navbar .navlist
+.navbar.active
 {
-    margin-top:100px;
+    right: 0;
+}
+
+.navbar h1
+{
+    font-size: 30px;
+    font-weight: 700;
 }
 
 .navbar .navlist li
 {
     margin:25px 0;
-    margin-left: 40px;
     font-size: 20px;
 }
 
@@ -43,4 +54,16 @@
     color:#333;
     font-weight:600;
     text-decoration: none;
+}
+
+.container
+{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 2000px;
+}
+
+#introduce
+{
+    background-color: #c0d1ff;
 }
