@@ -1,6 +1,13 @@
 const ham = document.getElementById("hamburger");
 const navbar = document.getElementById("navbar");
 let ham_off = true;
+let mybirth = new Date(1999,2,2);
+let now = new Date();
+window.onload=()=>
+{
+    const age = Math.floor((now-mybirth)/(1000*60*60*24*365));
+    document.getElementById("age").innerHTML=age;
+}
 function hamclick()
 {
     if(ham_off)
@@ -33,3 +40,6 @@ function copied(num)
         cpspan[num].innerHTML="click to copy!";
     },2000);
 }
+
+
+

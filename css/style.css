@@ -141,8 +141,10 @@ a .copy
 .square
 {
     width: 220px;
+    height: 290px;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 3px 3px 15px 0 rgba(0,0,0,0.4);
 }
 
 .square img
@@ -161,6 +163,11 @@ a .copy
     font-size: 20px;
 }
 
+.textbox h1 span
+{
+    font-size: 13px;
+}
+
 .textbox ul li
 {
     margin: 10px 0;
@@ -177,4 +184,14 @@ a .copy
 .textbox ul li button:hover
 {
     color: #4563ff;
+}
+
+.stack
+{
+    width: 50%;
+}
+
+.education
+{
+    
 }
