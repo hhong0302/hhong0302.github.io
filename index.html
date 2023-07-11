@@ -10,21 +10,53 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <button type="button" id="hamburger" onclick="hamclick()">
-        <i class="fa-solid fa-bars"></i>
-    </button>
+    <div class="iconbox">
+        <button id="email" onclick="copied(0)">
+            <i class="fa-regular fa-envelope"></i>
+            <span class="copy">click to copy!</span>
+        </button>
+        <button id="tel" onclick="copied(1)">
+            <i class="fa-solid fa-mobile-screen"></i>
+            <span class="copy">click to copy!</span>
+        </button>
+        <a href="https://github.com/hhong0302" target="_blank" id="github">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <button type="button" id="hamburger" onclick="hamclick()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
     <div id="navbar" class="navbar">
         <h1>menu</h1>
         <ul class="navlist">
             <li><a href="#introduce">Introduce</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Stack</a></li>
+            <li><a href="#">Project</a></li>
             <li><a href="#">contact</a></li>
         </ul>
     </div>
     <div id="introduce">
         <div class="container">
-            
+            <div class="introbox">
+                <div class="intro">
+                    <div class="square">
+                        <img src="images/my.jpg" alt="myimg">
+                    </div>
+                    <div class="textbox">
+                        <h1>조원홍</h1>
+                        <ul>
+                            <li>백엔드 프로그래머</li>
+                            <li>
+                                <button onclick="copied(0)"><i class="fa-solid fa-link"></i></button>
+                                wonhong0302@naver.com
+                            </li>
+                            <li>
+                                <button onclick="copied(1)"><i class="fa-solid fa-link"></i></button>
+                                010-7105-2805
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <script src="js/script.js"></script>

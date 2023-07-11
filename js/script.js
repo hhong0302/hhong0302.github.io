@@ -16,3 +16,20 @@ function hamclick()
         ham_off=true;
     }
 }
+const copyContent= async(text)=>
+{
+    try{
+        await navigator.clipboard.writeText(text);
+    }
+    catch(err){console.log("error!");}
+}
+function copied(num)
+{
+    const cpspan = document.getElementsByClassName("copy");
+    const arr = ["wonhong0302@naver.com","01071052805"];
+    copyContent(arr[num]);
+    cpspan[num].innerHTML="copied!";
+    setTimeout(()=>{
+        cpspan[num].innerHTML="click to copy!";
+    },2000);
+}
